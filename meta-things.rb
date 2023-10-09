@@ -82,7 +82,7 @@ loop do
     print " \e[1;92m[\e[0m\e[1;77m++\e[0m\e[1;92m]Press Enter to continue..."
     gets.chomp
   when '00', '0'
-    puts " #{white}[#{red}☠☠#{white}] #{red}Exiting..."
+    puts " #{white}[#{red}☠☠#{white}] #{red}Exiting...#{reset}"
     exit(0)
   else
     puts " #{white}[#{red}☠☠#{white}] #{red}Invalid choice. Please try again."
