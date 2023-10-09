@@ -46,14 +46,14 @@ end
 # Main loop
 loop do
   banner
-  puts " [#{white}01#{reset}] #{green}Check System Security Settings"
-  puts " [#{white}02#{reset}] #{green}Check Metasploit Installation"
-  puts " [#{white}03#{reset}] #{green}Create a Metasploit Payload"
-  puts " [#{white}04#{reset}] #{green}Run Metasploit Command"
-  puts " [#{white}05#{reset}] #{green}Run Security Tests"
-  puts " [#{white}06#{reset}] #{green}Change System Passwords"
-  puts " [#{white}07#{reset}] #{green}Clean Up Temporary Files"
-  puts " [#{white}00#{reset}] #{green}Exit"
+  puts " #{white}[#{green}01#{white}] #{green}Check System Security Settings"
+  puts " #{white}[#{green}02#{white}] #{green}Check Metasploit Installation"
+  puts " #{white}[#{green}03#{white}] #{green}Create a Metasploit Payload"
+  puts " #{white}[#{green}04#{white}] #{green}Run Metasploit Command"
+  puts " #{white}[#{green}05#{white}] #{green}Run Security Tests"
+  puts " #{white}[#{green}06#{white}] #{green}Change System Passwords"
+  puts " #{white}[#{green}07#{white}] #{green}Clean Up Temporary Files"
+  puts " #{white}[#{green}00#{white}] #{green}Exit"
   print " \e[1;92m[\e[0m\e[1;77m++\e[0m\e[1;92m] Enter your choice : "
   choice = gets.chomp
 
