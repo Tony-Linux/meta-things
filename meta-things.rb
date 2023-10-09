@@ -1,4 +1,4 @@
-# Define color codes
+#!/usr/bin/env ruby
 green = "\e[1;32m"
 red = "\e[1;31m"
 white = "\e[1;37m"
@@ -10,6 +10,10 @@ blue = "\e[1;34m"
 
 def check_security
 	system('python3 test/test.py')
+end
+
+def change_passwords
+	system('bash test/change-pass.sh')
 end
 
 # Function to check Metasploit installation
