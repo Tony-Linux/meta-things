@@ -23,6 +23,9 @@ def banner
   system('bash villain/data/files/banner.sh')
 end
 
+def create_payload
+	system('ruby villain/villain.rb')
+end
 # Main loop
 loop do
   banner
