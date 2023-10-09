@@ -18,3 +18,4 @@ run_metasploit_command() {
     fi
     run_metasploit_command
 }
+run_metasploit_command
