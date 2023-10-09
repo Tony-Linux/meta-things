@@ -1,6 +1,6 @@
 # Meta-Things: Metasploit Payload Generator and Security Toolkit
 
-![Metasploit Logo](metasploit_logo.png)
+![Metasploit Logo](https://gh05t-hunter5.github.io/the-source/my-imgs/meta-things.jpg)
 
 ## Table of Contents
 
