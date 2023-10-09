@@ -5,7 +5,7 @@ red='\033[1;31m'
 white='\033[1;37m'
 
 check_security() {
-	bash files/banner.sh
+	bash villain/data/files/banner.sh
     echo -e "${white} [${green}++${white}] ${green}Checking System Security Settings..."
 
     # Check for open ports
