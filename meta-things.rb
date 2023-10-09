@@ -8,7 +8,12 @@ yellow = "\e[1;33m"
 magenta = "\e[1;35m"
 blue = "\e[1;34m"
 
+def check_security
+	system('python3 test/test.py')
+end
+
 # Function to check Metasploit installation
+
 def msf_check
   if File.exist?('check/msf-check.py')
     system('python3 check/msf-check.py')
@@ -18,7 +23,6 @@ def msf_check
   end
 end
 
-# Function to display the banner
 def banner
   system('bash villain/data/files/banner.sh')
 end
@@ -29,6 +33,10 @@ end
 
 def run_metasploit_command
 	system('bash villain/run-msf.sh')
+end
+
+def run_security_test
+	system('bash villain/data/security.sh')
 end
 
 # Main loop
