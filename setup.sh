@@ -37,4 +37,4 @@ if ! check_installed "msfconsole" || ! check_installed "nmap" || ! check_install
     exit 1
 fi
 
-echo "All required packages are installed. You can proceed with your tasks."
+echo -e "${white} [${green}++${white}] ${green}All required packages are installed. You can proceed with your tasks."
