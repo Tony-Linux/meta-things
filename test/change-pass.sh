@@ -30,7 +30,8 @@ change_passwords() {
     clear
     banner
 	if [ $(id -u) -ne 0 ]; then
-		echo -e "${white} [${red}☠☠${white}] ${red}Root Must"
+		echo -e "${white} [${red}☠☠${white}] ${red}Root Access Required"
+ 		sleep 3 
 		exit
 	fi
     echo -e "${white} [${green}00${white}] ${green}Changing System Passwords..."
