@@ -15,6 +15,7 @@ if os.system('command -v nikto > /dev/null') == 0:
     pass  # Nikto is installed
 else:
     print(f'{white} [{red}☠☠{white}] {red}This feature may not work on your device')
+    time.sleep (3)
     exit(1)
 
 def run_security_test():
