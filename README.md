@@ -20,7 +20,6 @@
   - [Password Management](#password-management)
   - [Ethical Hacking Commands](#ethical-hacking-commands)
 - [Disclaimer](#disclaimer)
-- [Author](#author)
 - [License](#license)
 
 ## Overview
