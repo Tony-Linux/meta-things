@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import os
+import time
 
 # Define color codes
 green = '\033[1;32m'
