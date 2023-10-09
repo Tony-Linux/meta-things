@@ -2,7 +2,7 @@
 
 # Define banner function
 def banner
-  system("bash data/files/banner.sh")
+  system("bash villain/data/files/banner.sh")
 end
 
 # Define create_payload function
