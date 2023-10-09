@@ -145,5 +145,5 @@ Meta-Things is intended for educational and ethical hacking purposes only. Unaut
 
 ### License
 
-This project is licensed under the <a href="">MIT License</a>.
+This project is licensed under the <a href="https://github.com/Tony-Linux/meta-things/blob/main/LICENSE">MIT License</a>.
 
