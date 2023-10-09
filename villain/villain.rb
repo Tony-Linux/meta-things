@@ -221,7 +221,7 @@ def create_payload
     puts "#{white} [#{red}☠☠#{white}] #{red}Main Menu"
     exit 0
   else
-    puts "#{white} [#{red}☠☠#{white}] #{red}Invalid choice. Exiting..."
+    puts "#{white} [#{red}☠☠#{white}] #{red}Invalid choice..."
     sleep 3
     create_payload
   end
