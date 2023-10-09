@@ -34,7 +34,7 @@ change_passwords() {
  		sleep 3 
 		exit
 	fi
-    echo -e "${white} [${green}00${white}] ${green}Changing System Passwords..."
+    echo -e "${white} [${green}++${white}] ${green}Changing System Passwords..."
     passwd
     read -p $' \e[1;92m[\e[0m\e[1;77m++\e[0m\e[1;92m]Password change complete. Press Enter to continue...'
 	exit 
