@@ -26,6 +26,11 @@ end
 def create_payload
 	system('ruby villain/villain.rb')
 end
+
+def run_metasploit_command
+	system('bash villain/run-msf.sh')
+end
+
 # Main loop
 loop do
   banner
