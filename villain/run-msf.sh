@@ -4,7 +4,7 @@ red='\033[1;31m'
 white='\033[1;37m'
 cyan='\033[1;36m'
 
-bash data/files/banner.sh
+bash villain/data/files/banner.sh
 echo -e "${white} [${green}++${white}] ${green}Run Metasploit Command"
 
 run_metasploit_command() {
